@@ -1,75 +1,131 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yürüyüşün Faydaları</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabaku Fansub</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
-            margin: 0;
-            padding: 0;
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #d3d3d3;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: #696969;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      .logo {
+        max-height: 100px;
+        width: auto;
+      }
+      nav {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: #696969;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 0;
+        overflow: hidden;
+        position: relative;
+      }
+      nav .menu-container {
+        display: flex;
+        transition: transform 0.3s ease;
+      }
+      nav a {
+        color: white;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        font-size: 16px;
+        white-space: nowrap;
+      }
+      nav a:hover {
+        background-color: #a9a9a9;
+        color: #d3d3d3;
+        border-radius: 5px;
+      }
+      .menu-toggle {
+        background-color: #696969;
+        color: white;
+        border: none;
+        padding: 0.5rem;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1;
+      }
+      main {
+        padding: 1rem;
+        text-align: center;
+      }
+      .content-section {
+        margin: 1rem 0;
+      }
+      footer {
+        background-color: #696969;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        box-sizing: border-box;
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          overflow-x: auto;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
+        .menu-container {
+          flex-direction: column;
+          align-items: flex-start;
+          position: relative;
         }
-        .container {
-            padding: 20px;
+        .menu-toggle {
+          display: none;
         }
-        h1, h2 {
-            color: #4CAF50;
-        }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .image-container {
-            margin: 20px 0;
-        }
-        .benefit {
-            background-color: #e8f5e9;
-            border-left: 5px solid #4CAF50;
-            padding: 10px;
-            margin: 10px 0;
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Yürüyüşün Faydaları</h1>
+      <img src="logo - Kopya-.png" alt="Logo" class="logo" />
     </header>
-    <div class="container">
-        <section class="benefit">
-            <h2>1. Kalp Sağlığını İyileştirir</h2>
-            <p>Yürüyüş, kalp ve damar sağlığını destekler. Düzenli yürüyüş yapmak, kalp krizi riskini azaltır ve kan basıncını dengeler.</p>
-        </section>
-        <section class="benefit">
-            <h2>2. Ruh Halini İyileştirir</h2>
-            <p>Egzersiz yapmak endorfin salgılar, bu da ruh halini iyileştirir ve stresle başa çıkmanıza yardımcı olur.</p>
-        </section>
-        <section class="benefit">
-            <h2>3. Kilo Kontrolüne Yardımcı Olur</h2>
-            <p>Yürüyüş yapmak, kalori yakmanıza ve kilo kontrolü sağlamanıza yardımcı olur.</p>
-        </section>
-        <section class="benefit">
-            <h2>4. Kas ve Eklem Sağlığını Destekler</h2>
-            <p>Düzenli yürüyüş, kas ve eklemleri güçlendirir ve esnekliği artırır.</p>
-        </section>
-        <section class="image-container">
-            <h2>Yürüyüş Yapmanın Görsel Faydaları</h2>
-            <img src="https://example.com/walking1.jpg" alt="Doğada Yürüyüş">
-            <img src="https://example.com/walking2.jpg" alt="Parkta Yürüyüş">
-        </section>
-    </div>
-</body>
+    <nav>
+      <button class="menu-toggle">☰</button>
+      <div class="menu-container">
+        <a href="#">Ana Sayfa</a>
+        <a href="anime/anime_sitesi.html">Anime İzle</a>
+        <a href="manga/manga_sitesi.html">Manga Oku</a>
+        <a href="norvel/norvel_sitesi.html">Norvel Oku</a>
+        <a href="#">İletişim</a>
+      </div>
+    </nav>
+    <main>
+      <section class="content-section">
+        <h2>Popüler Animeler</h2>
+        <p>Burada popüler animeler listelenecek.</p>
+      </section>
+      <section class="content-section">
+        <h2>Yeni Mangalar</h2>
+        <p>Burada yeni eklenen mangalar listelenecek.</p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Sabaku Fansub. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        const menuContainer = document.querySelector('.menu-container');
+        const isOpen = menuContainer.style.transform === 'translateX(0%)';
+        menuContainer.style.transform = isOpen ? 'translateX(-100%)' : 'translateX(0%)';
+      });
+    </script>
+  </body>
 </html>
